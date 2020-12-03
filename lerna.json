@@ -1,0 +1,12 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "packages": [
+    "2020/*"
+  ],
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ]
+}
