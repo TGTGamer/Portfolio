@@ -26,3 +26,16 @@ function checkTreesv2(levels: string[], right: number, down: number) {
 }
 checkTrees(levelDesign, 3, 1) //?. $ 
 checkTreesv2(levelDesign, 3, 1) //?. $
+
+
+function multiply(input: number[][]) {
+    let returnable: number = 0
+    input.forEach(route => {
+        const trees = checkTrees(levelDesign, route[0], route[1]) //?
+        if (returnable == 0) returnable = trees
+        else returnable = returnable*trees
+    })
+    return returnable
+}
+
+multiply([[1,1], [3,1], [5,1], [7,1], [1,2]]) //?
